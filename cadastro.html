@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: linear-gradient(to right, rgb(235, 14, 14),rgb(232, 131, 131));
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0,0,0.8);
+            padding: 15px;
+            border-radius: 15px;
+            color: white;
+        }
+        fieldset{
+            border: 3px solid red;
+
+        }
+        legend{
+            border: 1px solid red;
+            padding: 10px;
+            text-align: center;
+            background-color: red;
+            border-radius: 5px;
+        }
+        
+        .InputBox{
+            position: relative;
+
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class ="box">
+        <form id="form">
+            <fieldset>
+                <legend><strong>Cadastro de Cliente</strong></legend>
+                <br>
+                <div class="InputBox">
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                    <input type="text" name="nome" id="nome" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <label for="selecionar">Tipo de Cliente:</label>
+                <select name="selecionarC" id="selecionarC">
+        
+                    <option value=""> </option>
+                    <option value="">Bronze</option>
+                    <option value="">Prata</option>
+                    <option value="">Ouro</option>
+                    <option value="">Platina</option>
+                    <option value="">Diamante</option>
+        
+                </select>
+        
+                <br><br>
+                <div class="inputBox">
+                    <label for="telefone" class="labelInput">Telefone</label>
+                    <input type="tel" name="telefone" id="telefone" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="data_nascimento"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" class="InputUser" required>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="CEP" class="labelInput">CEP</label>
+                    <input type="text" name="email" id="CEP" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="Cidade" class="labelInput">Cidade</label>
+                    <input type="text" name="Cidade" id="Cidade" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="estado" class="labelInput">Estado</label>
+                    <input type="text" name="Estado" id="estado" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <label for="endereco" class="labelInput">Endereço</label>
+                    <input type="text" name="Endereço" id="endereco" class="InputUser" required>
+                    
+                </div>
+                <br><br>
+                <input type="submit" name="btnSalvar" id="btnSalvar">
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
